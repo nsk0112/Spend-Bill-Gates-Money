@@ -1,0 +1,105 @@
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    .header-div {
+        width: 100%;
+        height: 15%;
+        background: linear-gradient(0deg, rgb(10, 180, 218), rgb(10, 123, 211));
+
+        .header {
+            font-size: 30px;
+        }
+    }
+
+    .money-header-div {
+        width: 100%;
+        background-color: rgb(10, 180, 218);
+        position: sticky;
+        top: 0;
+
+        .money-header {
+            font-size: 27px;
+        }
+    }
+
+    .things {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 90%;
+    }
+
+    .receipt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgb(180, 180, 180);
+        width: 50%;
+
+        .receipt-elements {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .receipt-element {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .element-name {
+                    width: 25%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                }
+
+                .element-piece {
+                    width: 15%;
+                }
+
+                .element-total {
+                    width: 20%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+            }
+
+        }
+
+        .total {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+
+            .total-text {
+                width: 50%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .amount {
+                width: 50%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+        }
+
+        hr {
+            width: 90%;
+            margin: 10px 0 0;
+        }
+    }
+}
